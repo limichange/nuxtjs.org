@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html n-head-ssr n-head="">
+  <head>
+    <meta n-head="true" charset="utf-8"/><meta n-head="true" name="viewport" content="width=device-width, initial-scale=1"/><meta n-head="true" hid="description" content="Nuxt.js is a minimal framework for creating Vue.js applications with server side rendering, code-splitting, hot-reloading, static generation and more!"/>
+    <title n-head="true">API: page.transition - Nuxt.js</title>
+    <link n-head="true" rel="icon" type="image/x-icon" href="favicon.ico"/>
+    
+    
+    
+    <base href="/">
+    <link rel="stylesheet" href="/_nuxt/style.css">
+  </head>
+  <body n-head="">
+    <div id="__nuxt" server-rendered="true"><header class="Header" data-v-6fcc5ae1><div class="container" data-v-6fcc5ae1><a href="/" class="Header__Title router-link-active" data-v-6fcc5ae1><img src="/_nuxt/img/logo_nav.png?be08efae0d5c46fd682e2a24f18545ae" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--desktop" data-v-6fcc5ae1> <img src="/_nuxt/img/logo_nav_mobile.png?f90e5a3d77508106e815f7179a322c02" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--mobile" data-v-6fcc5ae1> <h1 class="Header__Title__Text" data-v-6fcc5ae1>
+        NUXT
+      </h1></a> <div class="Header__Toggler" data-v-6fcc5ae1><div class="icon menu" data-v-6fcc5ae1></div></div> <nav class="Header__Nav Header__Nav--hidden" data-v-6fcc5ae1><ul class="Header__Nav__List" data-v-6fcc5ae1><li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/guide" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            GUIDE
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/api" class="Header__Nav__List__Item__Link router-link-active" data-v-6fcc5ae1>
+            API
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/examples" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            EXAMPLES
+          </a></li> <li class="Header__Nav__List__Item Header__Nav__List__Item--social" data-v-6fcc5ae1><a href="https://github.com/nuxt/nuxt.js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-git" data-v-6fcc5ae1></i></a> <a href="https://twitter.com/nuxt_js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-twit" data-v-6fcc5ae1></i></a></li></ul></nav></div></header> <div><div class="progress" style="width:0%;height:2px;background-color:#41B883;opacity:0" data-v-2aeb4e08></div> <div class="API" data-v-47f03eea><div class="Bar" data-v-5925e26f data-v-47f03eea><div class="container" data-v-5925e26f><div class="Bar__Left" data-v-5925e26f><span class="Bar__Left__Text" data-v-5925e26f>Version 0.8.0</span> <div class="Bar__Left__Toggler" data-v-5925e26f><div class="indent icon" data-v-5925e26f></div></div></div> <div class="Bar__Right" data-v-5925e26f><div class="Search" data-v-60d64f08 data-v-5925e26f><input type="text" name="search" id="search" placeholder="Search" value="" class="Search__Input" data-v-60d64f08> <label for="search" class="Search__Label" data-v-60d64f08><div class="icon search" data-v-60d64f08></div></label></div></div></div></div> <div class="API__Left API__Left--hidden" data-v-47f03eea><div class="container" data-v-47f03eea><nav class="Affix" data-v-0437d0ac data-v-47f03eea><h3 class="Affix__Title" data-v-0437d0ac>Nuxt Module</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Usage
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/nuxt-render" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Render
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/nuxt-render-route" class="Affix__List__Item__Link" data-v-0437d0ac>
+          RenderRoute
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Configuration</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-build" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Build
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-cache" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Cache
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-css" class="Affix__List__Item__Link" data-v-0437d0ac>
+          CSS
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-env" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Env
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-generate" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Generate
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-head" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Head
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-loading" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Loading
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-plugins" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Plugins
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-router" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Router
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>pages</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-context" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Context
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-data" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Option: data
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-fetch" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Option: fetch
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-transition" class="Affix__List__Item__Link router-link-active" data-v-0437d0ac>
+          Option: transition
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-layout-app" class="Affix__List__Item__Link" data-v-0437d0ac>
+          _app.vue
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-layout-error" class="Affix__List__Item__Link" data-v-0437d0ac>
+          _error.vue
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-hidden" class="Affix__List__Item__Link" data-v-0437d0ac>
+          _*.vue
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>store</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/store-nuxtserverinit" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Action nuxtServerInit
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Commands</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt-build" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt build
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt-start" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt start
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt-generate" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt generate
+        </a></li></ul></nav></div></div> <div class="container" data-v-47f03eea><div class="API__Right" data-v-47f03eea><div class="Content Content" data-v-47f03eea><h1 id="pages-transitions">Pages transitions</h1>
+<p>The <code>transition</code> option allows to set the transition options used in the <code>&lt;transition&gt;</code> component.</p>
+<h2 id="transition">transition</h2>
+<ul>
+<li><strong>Type:</strong> <code>String | Object</code></li>
+<li><strong>Properties:</strong><ul>
+<li><code>name</code><ul>
+<li>type: <code>String</code></li>
+<li>default: <code>page</code></li>
+</ul>
+</li>
+<li><code>mode</code><ul>
+<li>type: <code>String</code></li>
+<li>default: <code>out-in</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>If the value of the transition key is a String, it we be used as the transition&#39;s name.</p>
+<h3 id="example">Example</h3>
+<p><code>pages/index.vue</code>:</p>
+<pre><code class="hljs js">&lt;script&gt;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-attr">transition</span>: <span class="hljs-string">'bounce'</span>
+}
+&lt;<span class="hljs-regexp">/script&gt;</span></code></pre><p>In the <code>store/index.js</code>:</p>
+<pre><code class="hljs js"><span class="hljs-comment">// ...</span>
+actions: {
+  fetchPosts ({ commit }) {
+    <span class="hljs-keyword">return</span> axios.get(<span class="hljs-string">'https//my-api/posts'</span>)
+    .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+      commit(<span class="hljs-string">'SET_POSTS'</span>, res.data)
+    })
+  }
+}
+<span class="hljs-comment">// ...</span></code></pre><p>When the page will be rendered, the store will be filled and we will be able to show the <code>$store.state</code> inside the template.</p>
+<p>To see it in action: <a href="/examples/routes-transitions">examples/routes-transitions</a></p>
+</div> <p class="API__Contribute" data-v-47f03eea>Caught a mistake or want to contribute to the documentation?
+        <a href="https://github.com/nuxt/docs/blob/master/api/pages-transition.md" target="_blank" class="link" data-v-47f03eea>
+          Edit this page on Github!
+        </a></p></div></div> <div class="API__Footer" data-v-47f03eea><footer class="Footer" data-v-4e99f6ef data-v-47f03eea><div class="container" data-v-4e99f6ef><div class="Footer__Text" data-v-4e99f6ef>
+      Made by Chopin Brothers:
+      <a href="https://github.com/Atinux" target="_blank" data-v-4e99f6ef>@Atinux</a>
+      and
+      <a href="https://github.com/alexchopin" target="_blank" data-v-4e99f6ef>@alexchopin</a></div></div></footer></div></div></div></div>
+    <script type="text/javascript" defer>window.__NUXT__={"data":[{"content":"---\ntitle: page.transition\n---\n\n# Pages transitions\n\nThe `transition` option allows to set the transition options used in the `\u003Ctransition\u003E` component.\n\n## transition\n\n- **Type:** `String | Object`\n- **Properties:**\n  - `name`\n    - type: `String`\n    - default: `page`\n  - `mode`\n    - type: `String`\n    - default: `out-in`\n\nIf the value of the transition key is a String, it we be used as the transition's name.\n\n### Example\n\n`pages\u002Findex.vue`:\n```js\n\u003Cscript\u003E\nexport default {\n  transition: 'bounce'\n}\n\u003C\u002Fscript\u003E\n```\n\nIn the `store\u002Findex.js`:\n\n```js\n\u002F\u002F ...\nactions: {\n  fetchPosts ({ commit }) {\n    return axios.get('https\u002F\u002Fmy-api\u002Fposts')\n    .then((res) =\u003E {\n      commit('SET_POSTS', res.data)\n    })\n  }\n}\n\u002F\u002F ...\n```\n\nWhen the page will be rendered, the store will be filled and we will be able to show the `$store.state` inside the template.\n\nTo see it in action: [examples\u002Froutes-transitions](\u002Fexamples\u002Froutes-transitions)\n","path":"pages-transition"}],"error":null,"state":{"version":"0.8.0","visibleHeader":false,"visibleAffix":false,"guideMenu":{"Prologue":[{"name":"What is Nuxt.js ?","to":""},{"name":"Contribution Guide","to":"\u002Fcontribution-guide"},{"name":"Release Notes","to":"\u002Frelease-notes"}],"Getting Started":[{"name":"Installation","to":"\u002Finstallation"},{"name":"Directory structure","to":"\u002Fdirectory-structure"},{"name":"Routing","to":"\u002Frouting"},{"name":"Pages","to":"\u002Fpages"},{"name":"Static files","to":"\u002Fstatic-files"},{"name":"Deployment","to":"\u002Fdeployment"}],"Customization":[{"name":"Configuration","to":"\u002Fconfiguration"},{"name":"Custom routes","to":"\u002Fcustom-routes"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Loading component","to":"\u002Floading-component"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Advanced":[{"name":"Async datas","to":"\u002Fasync-datas"},{"name":"Vuex store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]},"apiMenu":{"Nuxt Module":[{"name":"Usage","to":""},{"name":"Render","to":"\u002Fnuxt-render"},{"name":"RenderRoute","to":"\u002Fnuxt-render-route"}],"Configuration":[{"name":"Build","to":"\u002Fconfiguration-build"},{"name":"Cache","to":"\u002Fconfiguration-cache"},{"name":"CSS","to":"\u002Fconfiguration-css"},{"name":"Env","to":"\u002Fconfiguration-env"},{"name":"Generate","to":"\u002Fconfiguration-generate"},{"name":"Head","to":"\u002Fconfiguration-head"},{"name":"Loading","to":"\u002Fconfiguration-loading"},{"name":"Plugins","to":"\u002Fconfiguration-plugins"},{"name":"Router","to":"\u002Fconfiguration-router"}],"pages":[{"name":"Context","to":"\u002Fpages-context"},{"name":"Option: data","to":"\u002Fpages-data"},{"name":"Option: fetch","to":"\u002Fpages-fetch"},{"name":"Option: transition","to":"\u002Fpages-transition"},{"name":"_app.vue","to":"\u002Fpages-layout-app"},{"name":"_error.vue","to":"\u002Fpages-layout-error"},{"name":"_*.vue","to":"\u002Fpages-hidden"}],"store":[{"name":"Action nuxtServerInit","to":"\u002Fstore-nuxtserverinit"}],"Commands":[{"name":"Nuxt","to":"\u002Fcommands-nuxt"},{"name":"Nuxt build","to":"\u002Fcommands-nuxt-build"},{"name":"Nuxt start","to":"\u002Fcommands-nuxt-start"},{"name":"Nuxt generate","to":"\u002Fcommands-nuxt-generate"}]},"examplesMenu":{"Essentials":[{"name":"Hello world","to":""},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Customization":[{"name":"Cached Components","to":"\u002Fcached-components"},{"name":"Custom Loading","to":"\u002Fcustom-loading"},{"name":"Custom Routes","to":"\u002Fcustom-routes"},{"name":"Global CSS","to":"\u002Fglobal-css"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"}],"Advanced":[{"name":"Async Datas","to":"\u002Fasync-datas"},{"name":"Auth Routes","to":"\u002Fauth-routes"},{"name":"Vuex Store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]}},"serverRendered":true}</script>
+    <script src="/_nuxt/vendor.bundle.js" defer></script>
+    <script src="/_nuxt/nuxt.bundle.js" defer></script>
+  </body>
+</html>

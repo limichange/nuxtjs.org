@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html n-head-ssr n-head="">
+  <head>
+    <meta n-head="true" charset="utf-8"/><meta n-head="true" name="viewport" content="width=device-width, initial-scale=1"/><meta n-head="true" hid="description" content="Nuxt.js is a minimal framework for creating Vue.js applications with server side rendering, code-splitting, hot-reloading, static generation and more!"/>
+    <title n-head="true">Release Notes - Nuxt.js</title>
+    <link n-head="true" rel="icon" type="image/x-icon" href="favicon.ico"/>
+    
+    
+    
+    <base href="/">
+    <link rel="stylesheet" href="/_nuxt/style.css">
+  </head>
+  <body n-head="">
+    <div id="__nuxt" server-rendered="true"><header class="Header" data-v-6fcc5ae1><div class="container" data-v-6fcc5ae1><a href="/" class="Header__Title router-link-active" data-v-6fcc5ae1><img src="/_nuxt/img/logo_nav.png?be08efae0d5c46fd682e2a24f18545ae" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--desktop" data-v-6fcc5ae1> <img src="/_nuxt/img/logo_nav_mobile.png?f90e5a3d77508106e815f7179a322c02" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--mobile" data-v-6fcc5ae1> <h1 class="Header__Title__Text" data-v-6fcc5ae1>
+        NUXT
+      </h1></a> <div class="Header__Toggler" data-v-6fcc5ae1><div class="icon menu" data-v-6fcc5ae1></div></div> <nav class="Header__Nav Header__Nav--hidden" data-v-6fcc5ae1><ul class="Header__Nav__List" data-v-6fcc5ae1><li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/guide" class="Header__Nav__List__Item__Link router-link-active" data-v-6fcc5ae1>
+            GUIDE
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/api" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            API
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/examples" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            EXAMPLES
+          </a></li> <li class="Header__Nav__List__Item Header__Nav__List__Item--social" data-v-6fcc5ae1><a href="https://github.com/nuxt/nuxt.js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-git" data-v-6fcc5ae1></i></a> <a href="https://twitter.com/nuxt_js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-twit" data-v-6fcc5ae1></i></a></li></ul></nav></div></header> <div><div class="progress" style="width:0%;height:2px;background-color:#41B883;opacity:0" data-v-2aeb4e08></div> <div class="Guide" data-v-23a45d78><div class="Bar" data-v-5925e26f data-v-23a45d78><div class="container" data-v-5925e26f><div class="Bar__Left" data-v-5925e26f><span class="Bar__Left__Text" data-v-5925e26f>Version 0.8.0</span> <div class="Bar__Left__Toggler" data-v-5925e26f><div class="indent icon" data-v-5925e26f></div></div></div> <div class="Bar__Right" data-v-5925e26f><div class="Search" data-v-60d64f08 data-v-5925e26f><input type="text" name="search" id="search" placeholder="Search" value="" class="Search__Input" data-v-60d64f08> <label for="search" class="Search__Label" data-v-60d64f08><div class="icon search" data-v-60d64f08></div></label></div></div></div></div> <div class="Guide__Left Guide__Left--hidden" data-v-23a45d78><div class="container" data-v-23a45d78><nav class="Affix" data-v-0437d0ac data-v-23a45d78><h3 class="Affix__Title" data-v-0437d0ac>Prologue</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide" class="Affix__List__Item__Link" data-v-0437d0ac>
+          What is Nuxt.js ?
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/contribution-guide" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Contribution Guide
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/release-notes" class="Affix__List__Item__Link router-link-active" data-v-0437d0ac>
+          Release Notes
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Getting Started</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/installation" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Installation
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/directory-structure" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Directory structure
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/routing" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Routing
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/pages" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Pages
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/static-files" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Static files
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/deployment" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Deployment
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Customization</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/configuration" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Configuration
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/custom-routes" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Custom routes
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/layouts" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Layouts
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/loading-component" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Loading component
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/plugins" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Plugins
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/routes-transitions" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Routes transitions
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/seo-html-head" class="Affix__List__Item__Link" data-v-0437d0ac>
+          SEO HTML Head
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Advanced</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/async-datas" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Async datas
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/vuex-store" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Vuex store
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/guide/testing" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Testing
+        </a></li></ul></nav></div></div> <div class="container" data-v-23a45d78><div class="Guide__Right" data-v-23a45d78><div class="Content" data-v-23a45d78><h1 data-v-23a45d78>Release Notes</h1> <div data-v-23a45d78><h2 id="v0.8.2" data-v-23a45d78>v0.8.2</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="bug-fix">Bug fix</h1>
+<ul>
+<li>Set <code>window.onNuxtReady</code> before importing the plugins so we can use this hook inside them</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.8.1" data-v-23a45d78>v0.8.1</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="feature">Feature</h1>
+<ul>
+<li>Add <code>routeChanged</code> event for <code>$nuxt</code>, you can use it like this in your plugins:<pre><code class="hljs js"><span class="hljs-keyword">if</span> (process.BROWSER_BUILD) {
+<span class="hljs-comment">// set google-analytics script here...</span>
+<span class="hljs-comment">// and then:</span>
+<span class="hljs-built_in">window</span>.onNuxtReady(<span class="hljs-function">(<span class="hljs-params">app</span>) =&gt;</span> {
+  app.$nuxt.$on(<span class="hljs-string">'routeChanged'</span>, (to, <span class="hljs-keyword">from</span>) =&gt; {
+    ga(<span class="hljs-string">'set'</span>, <span class="hljs-string">'page'</span>, to.fullPath)
+    ga(<span class="hljs-string">'send'</span>, <span class="hljs-string">'pageview'</span>)
+  })
+})
+}</code></pre></li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.8.0" data-v-23a45d78>v0.8.0</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="breaking-changes">Breaking Changes</h1>
+<ul>
+<li>The layouts has been moved to the <strong>layouts/</strong> directory for better architecting. Which have to move your <code>pages/_app.vue</code> to <code>layouts/app.vue</code>and <code>pages/_error.vue</code> to <code>layouts/error.vue</code></li>
+<li>When used programmatically, you now have to call <code>nuxt.build()</code> because <code>new Nuxt(options)</code> is not launching anymore the build automatically.<pre><code class="hljs js"><span class="hljs-keyword">const</span> Nuxt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'Nuxt'</span>)
+<span class="hljs-keyword">const</span> nuxt = <span class="hljs-keyword">new</span> Nuxt(options)
+nuxt.build()
+.then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+app.use(nuxt.render)
+})</code></pre></li>
+</ul>
+<h1 id="features">Features</h1>
+<ul>
+<li>Add <code>nuxt.renderAndGetWindow(jsdom, url)</code> method to render the url and sent back the <code>window</code> object, useful for test purposes (see <a href="https://github.com/nuxt/nuxt.js/blob/master/examples/with-ava/test/index.test.js#L43">examples/with-ava/</a>)</li>
+</ul>
+<h1 id="examples">Examples</h1>
+<ul>
+<li>Add authenticated routes example: <a href="https://nuxtjs.org/examples/auth-routes">https://nuxtjs.org/examples/auth-routes</a></li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.9" data-v-23a45d78>v0.7.9</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="features">Features</h1>
+<ul>
+<li>Add <code>env</code> in the data context argument</li>
+<li>Add $nuxt.error({ statusCode, message }) method in the client side for calling the error page</li>
+</ul>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>Add generated name in the routes generates by the pages directory (ex pages/index.vue will me the <code>index</code> name, pages/foo/bar.vue will be <code>foo-bar</code>)</li>
+</ul>
+<h1 id="fix">Fix</h1>
+<ul>
+<li>Fix router.base when set to &#39;/&#39; or undefined, avoid generating 2 //</li>
+</ul>
+<h1 id="misc">Misc</h1>
+<ul>
+<li>Start working on the <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/auth-routes">examples/auth-routes/</a> example</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.8" data-v-23a45d78>v0.7.8</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="improvements">Improvements</h1>
+<ul>
+<li>Update <code>vue-router</code> to v2.1.0</li>
+<li>Add <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/cached-components">examples/cached-components/</a> example</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.7" data-v-23a45d78>v0.7.7</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="improvements">Improvements</h1>
+<ul>
+<li>We don&#39;t need to bind <code>nuxt.render.bind(nuxt)</code> anymore to use <code>nuxt.render</code> as a middleware (Issue #18)</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.6" data-v-23a45d78>v0.7.6</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="bug-fixes">Bug fixes</h1>
+<ul>
+<li>Make sure to generate the <code>.nojekyll</code> file <strong>empty</strong></li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.5" data-v-23a45d78>v0.7.5</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="features">Features</h1>
+<ul>
+<li><code>nuxt generate</code> now adds a <code>.nojekyll</code> file in the generated folder to tell Github Pages to <strong>not</strong> ignore the <code>_nuxt</code> directory (see <a href="https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/">github pages docs</a> about it)</li>
+</ul>
+<h1 id="updates">Updates</h1>
+<ul>
+<li><code>nuxt init</code> has been remove, use <a href="https://github.com/nuxt/starter">nuxt/starter</a> instead</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.4" data-v-23a45d78>v0.7.4</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="breaking-changes">Breaking Changes</h1>
+<ul>
+<li><code>pages/_error-debug.vue</code> has been removed, now only <code>pages/_error.vue</code> should be defined</li>
+</ul>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>Add <code>Content-Length</code> header in the server when rendering the html</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.3" data-v-23a45d78>v0.7.3</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="features">Features</h1>
+<ul>
+<li>You can now access the application path with <code>˜</code>, useful if you have others folders, see #16 </li>
+<li>Add <code>env</code> property in <code>nuxt.config.js</code>, you can now define environment variables that will be shared across the components (<strong>client and server side</strong>), see #16 </li>
+<li><code>window.onNuxtReady(callback)</code> is now a function, useful for attaching multiple functions to it, when is the app will be mounted, the callback will be called with the root application in the first argument<pre><code class="hljs js"><span class="hljs-built_in">window</span>.onNuxtReady(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">app</span>) </span>{
+<span class="hljs-comment">// app is the $root vm</span>
+})</code></pre>It is useful for test purposes or when defining plugins to launch when the app is mounted.</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.2" data-v-23a45d78>v0.7.2</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="bug-fixes">Bug fixes</h1>
+<ul>
+<li>Use babel preset 2015 by default in .vue files to have the best compatibility possible in the browsers</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.1" data-v-23a45d78>v0.7.1</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="improvements">Improvements</h1>
+<ul>
+<li>Remove vue-loaders <code>js</code> and <code>css</code> settings (let <code>vue-loader</code> handle it)</li>
+<li>Call the <code>store.replaceState</code> once the app is instantiated</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.7.0" data-v-23a45d78>v0.7.0</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="breaking-changes">Breaking Changes</h1>
+<ul>
+<li>If you were using <code>process.BROWSER</code> to add special code for the client bundle, please use <code>process.BROWSER_BUILD</code> now. Also, <code>process.SERVER_BUILD</code> has been added too.</li>
+</ul>
+<h1 id="features">Features</h1>
+<ul>
+<li>Add alias <code>~router</code> to import the <code>vue-router</code> router created by nuxt.js (can be useful to use <code>vuex-router-sync</code> for example.</li>
+</ul>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>Custom routes path with regexp are now working</li>
+</ul>
+<h1 id="dependencies">Dependencies</h1>
+<ul>
+<li>Upgrade <code>vue</code> to <code>2.1.2</code></li>
+<li>Upgrade <code>vue-meta</code> to <code>0.5.2</code></li>
+<li>Remove <code>glob-promise</code> and only use <code>glob</code> instead</li>
+</ul>
+<p><em>PS: working also on <code>nuxt generate</code>, to generate modern static websites with html files generated =&gt; Nuxt.js apps could be hosted on Github Pages 🔥</em></p>
+</div></div><div data-v-23a45d78><h2 id="v0.6.9" data-v-23a45d78>v0.6.9</h2> <div class="Content Release__Content" data-v-23a45d78><h2 id="update-outdated-dependencies">Update outdated dependencies</h2>
+<ul>
+<li><code>glob-promise</code> to v2.0.0</li>
+<li><code>css-loader</code> to v0.26.0</li>
+</ul>
+<p>Check Nuxt.js dependencies on <a href="https://david-dm.org/nuxt/nuxt.js">https://david-dm.org/nuxt/nuxt.js</a></p>
+</div></div><div data-v-23a45d78><h2 id="v0.6.8" data-v-23a45d78>v0.6.8</h2> <div class="Content Release__Content" data-v-23a45d78><h2 id="upgrade-to-vue-2-1-0-and-vue-loader-10-0-0">Upgrade to Vue 2.1.0 and Vue-loader 10.0.0</h2>
+<ul>
+<li>Remove <code>process.env.VUE_ENV=server</code> since added automatically by <code>vue-server-renderer</code> now</li>
+<li>Upgrade <code>vue-server-renderer</code> to v2.1.0</li>
+<li>Add <code>vue-template-compiler</code> dependencies to <code>^2.1.0</code></li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.6.7" data-v-23a45d78>v0.6.7</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="feature">Feature</h1>
+<ul>
+<li>Add option <code>build.postcss</code>, defaults to:<pre><code class="hljs js">[
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'autoprefixer'</span>)({
+  <span class="hljs-attr">browsers</span>: [<span class="hljs-string">'last 3 versions'</span>]
+})
+]</code></pre></li>
+</ul>
+<p>You can update this option in <code>nuxt.config.js</code>, example:</p>
+<pre><code class="hljs js"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">postcss</span>: [
+    <span class="hljs-built_in">require</span>(<span class="hljs-string">'postcss-cssnext'</span>)()
+  ]
+}</code></pre><p>This resolve the issue #14 </p>
+</div></div><div data-v-23a45d78><h2 id="v0.6.6" data-v-23a45d78>v0.6.6</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="fix">Fix</h1>
+<ul>
+<li>Force to apply new data when using the same component in different routes (Vue.js patch system was not setting the $data)</li>
+<li>Hot reloading when updating the template but <code>data</code> and <code>fetch</code> not updated</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.6.5" data-v-23a45d78>v0.6.5</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="routes-transitions-">Routes transitions 🔥</h1>
+<p>Demonstration in video: <a href="https://www.youtube.com/watch?v=RIXOzJWFfc8">https://www.youtube.com/watch?v=RIXOzJWFfc8</a></p>
+<p>You can now add transition between routes thanks to the <code>transition</code> key, see more details on <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/routes-transitions">examples/routes-transitions/</a></p>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>You can configure the port of the nuxt.js server via the package.json too #11 </li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.6.0" data-v-23a45d78>v0.6.0</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="new-features-">New features:</h1>
+<ul>
+<li>We can now extend the root application by adding <code>pages/_app.vue</code>. You can now add a navigation bar which stays whatever the page you&#39;re on (error pages included), see an <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/extend-app">examples/extend-app/</a> for more details and documentation (you can also watch the <a href="https://www.youtube.com/watch?v=wBhia7uBxDA">short video example</a>)</li>
+<li>Add <code>context.isDev</code> in the data(context) and fetch(context) methods, can be useful for caching some data calls on production</li>
+<li>Add <code>callback</code> argument (optional), in <code>data(context [, callback])</code> method, because not everyone may be comfortable with using Promises. The callback is the node.js style: <code>callback(err, data)</code>, see <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/async-data">examples/async-data/</a> for more details.</li>
+</ul>
+<h1 id="fix">Fix</h1>
+<ul>
+<li>Bug with path with ~ inside (example: ~plugins/my-plugin.js)</li>
+</ul>
+<h1 id="documentation">Documentation</h1>
+<ul>
+<li>Add <strong>Handling errors</strong> section in <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/async-data">examples/async-data/</a> and also explain how to use data with a <code>callback</code>.</li>
+<li>Add README in <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/head-elements">examples/head-elements/</a>, feel free to take a look at it to see how to update your app headers with Nuxt.js.</li>
+<li>Add <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/extend-app">examples/extend-app/</a></li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.5.3" data-v-23a45d78>v0.5.3</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="improvements">Improvements</h1>
+<ul>
+<li>Add <code>Content-Type</code>: <code>text/html; charset=utf-8</code> header</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.5.2" data-v-23a45d78>v0.5.2</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="fix">Fix</h1>
+<ul>
+<li>Duplicated components imported in router from custom routes</li>
+<li>Hidden files from subdirectory</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.5.1" data-v-23a45d78>v0.5.1</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="fix">Fix</h1>
+<ul>
+<li>Nuxt.js is now working on Windows (thanks to @herreraemanuel)</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.5.0" data-v-23a45d78>v0.5.0</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="feature">Feature</h1>
+<ul>
+<li>We can now use <code>mixins</code> or <code>export default Vue.extend({ ... })</code> inside the pages</li>
+</ul>
+<p>Side note, when exporting a page with <code>Vue.extend</code>, the hot-reloading might have some difficulties to works perfectly.</p>
+<h1 id="fix">Fix</h1>
+<ul>
+<li>Remove a console.log</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.4.9" data-v-23a45d78>v0.4.9</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="babel-options">Babel options</h1>
+<ul>
+<li>We can now configure the <code>query</code> of babel-loader via <code>build.babel</code> option in <code>nuxt.config.js</code>.</li>
+</ul>
+<p>Defaults are:</p>
+<pre><code class="hljs js">{
+  <span class="hljs-attr">presets</span>: [
+    [<span class="hljs-string">'es2015'</span>, { <span class="hljs-attr">modules</span>: <span class="hljs-literal">false</span> }],
+    <span class="hljs-string">'stage-2'</span>
+  ],
+  <span class="hljs-attr">cacheDirectory</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// true if launched via nuxt-dev</span>
+}</code></pre></div></div><div data-v-23a45d78><h2 id="v0.4.8" data-v-23a45d78>v0.4.8</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="simplicity">Simplicity</h1>
+<p>The <code>store</code> option has been removed in the <code>nuxt.config.js</code> file, it&#39;s now implicit.</p>
+<p>If a <code>store/index.js</code> file is detected, the store option will be activated and Vuex will be imported, see <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/vuex-store">examples/vuex-store/</a> for more details.</p>
+</div></div><div data-v-23a45d78><h2 id="v0.4.7" data-v-23a45d78>v0.4.7</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="feature">Feature</h1>
+<ul>
+<li>Add <code>build.plugins</code> option in <code>nuxt.config.js</code> file to add custom plugin for webpack</li>
+</ul>
+<h1 id="fix">Fix</h1>
+<ul>
+<li>Fix error from the server-side when no component is found to render the route</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.4.6" data-v-23a45d78>v0.4.6</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="features">Features</h1>
+<ul>
+<li>Call <code>nuxtServerInit</code> action in the store if defined, let you handle some use-cases with authenticated users for example (see <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/vuex-store#action-nuxtserverinit">https://github.com/nuxt/nuxt.js/tree/master/examples/vuex-store#action-nuxtserverinit</a>)</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.4.4" data-v-23a45d78>v0.4.4</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="features">Features</h1>
+<ul>
+<li>Add <code>context.error</code> method to show the error page from the <code>data</code> or <code>fetch</code> method inside the pages, see <a href="https://github.com/nuxt/nuxt.js/tree/master/examples/custom-routes">example/custom-routes/</a></li>
+</ul>
+<h1 id="fix">Fix</h1>
+<ul>
+<li>Fix bugs with vue 2.0.6~7 and <code>_Ctor</code> #6 </li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.4.2" data-v-23a45d78>v0.4.2</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="fix">Fix</h1>
+<ul>
+<li>Fix resolving path when using aliases on custom routes</li>
+</ul>
+</div></div><div data-v-23a45d78><h2 id="v0.4.3" data-v-23a45d78>v0.4.3</h2> <div class="Content Release__Content" data-v-23a45d78><h1 id="features">Features</h1>
+<ul>
+<li>Watch <code>nuxt.config.js</code> when using <code>nuxt-dev</code> to reload the build when updating the config file</li>
+</ul>
+</div></div></div></div></div> <div class="Guide__Footer" data-v-23a45d78><footer class="Footer" data-v-4e99f6ef data-v-23a45d78><div class="container" data-v-4e99f6ef><div class="Footer__Text" data-v-4e99f6ef>
+      Made by Chopin Brothers:
+      <a href="https://github.com/Atinux" target="_blank" data-v-4e99f6ef>@Atinux</a>
+      and
+      <a href="https://github.com/alexchopin" target="_blank" data-v-4e99f6ef>@alexchopin</a></div></div></footer></div></div></div></div>
+    <script type="text/javascript" defer>window.__NUXT__={"data":[{"releases":[{"name":"v0.8.2","date":"2016-12-07T22:59:54Z","body":"\u003Ch1 id=\"bug-fix\"\u003EBug fix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003ESet \u003Ccode\u003Ewindow.onNuxtReady\u003C\u002Fcode\u003E before importing the plugins so we can use this hook inside them\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.8.1","date":"2016-12-07T22:48:31Z","body":"\u003Ch1 id=\"feature\"\u003EFeature\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003ErouteChanged\u003C\u002Fcode\u003E event for \u003Ccode\u003E$nuxt\u003C\u002Fcode\u003E, you can use it like this in your plugins:\u003Cpre\u003E\u003Ccode class=\"hljs js\"\u003E\u003Cspan class=\"hljs-keyword\"\u003Eif\u003C\u002Fspan\u003E (process.BROWSER_BUILD) {\n\u003Cspan class=\"hljs-comment\"\u003E\u002F\u002F set google-analytics script here...\u003C\u002Fspan\u003E\n\u003Cspan class=\"hljs-comment\"\u003E\u002F\u002F and then:\u003C\u002Fspan\u003E\n\u003Cspan class=\"hljs-built_in\"\u003Ewindow\u003C\u002Fspan\u003E.onNuxtReady(\u003Cspan class=\"hljs-function\"\u003E(\u003Cspan class=\"hljs-params\"\u003Eapp\u003C\u002Fspan\u003E) =&gt;\u003C\u002Fspan\u003E {\n  app.$nuxt.$on(\u003Cspan class=\"hljs-string\"\u003E'routeChanged'\u003C\u002Fspan\u003E, (to, \u003Cspan class=\"hljs-keyword\"\u003Efrom\u003C\u002Fspan\u003E) =&gt; {\n    ga(\u003Cspan class=\"hljs-string\"\u003E'set'\u003C\u002Fspan\u003E, \u003Cspan class=\"hljs-string\"\u003E'page'\u003C\u002Fspan\u003E, to.fullPath)\n    ga(\u003Cspan class=\"hljs-string\"\u003E'send'\u003C\u002Fspan\u003E, \u003Cspan class=\"hljs-string\"\u003E'pageview'\u003C\u002Fspan\u003E)\n  })\n})\n}\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.8.0","date":"2016-12-07T18:43:42Z","body":"\u003Ch1 id=\"breaking-changes\"\u003EBreaking Changes\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EThe layouts has been moved to the \u003Cstrong\u003Elayouts\u002F\u003C\u002Fstrong\u003E directory for better architecting. Which have to move your \u003Ccode\u003Epages\u002F_app.vue\u003C\u002Fcode\u003E to \u003Ccode\u003Elayouts\u002Fapp.vue\u003C\u002Fcode\u003Eand \u003Ccode\u003Epages\u002F_error.vue\u003C\u002Fcode\u003E to \u003Ccode\u003Elayouts\u002Ferror.vue\u003C\u002Fcode\u003E\u003C\u002Fli\u003E\n\u003Cli\u003EWhen used programmatically, you now have to call \u003Ccode\u003Enuxt.build()\u003C\u002Fcode\u003E because \u003Ccode\u003Enew Nuxt(options)\u003C\u002Fcode\u003E is not launching anymore the build automatically.\u003Cpre\u003E\u003Ccode class=\"hljs js\"\u003E\u003Cspan class=\"hljs-keyword\"\u003Econst\u003C\u002Fspan\u003E Nuxt = \u003Cspan class=\"hljs-built_in\"\u003Erequire\u003C\u002Fspan\u003E(\u003Cspan class=\"hljs-string\"\u003E'Nuxt'\u003C\u002Fspan\u003E)\n\u003Cspan class=\"hljs-keyword\"\u003Econst\u003C\u002Fspan\u003E nuxt = \u003Cspan class=\"hljs-keyword\"\u003Enew\u003C\u002Fspan\u003E Nuxt(options)\nnuxt.build()\n.then(\u003Cspan class=\"hljs-function\"\u003E\u003Cspan class=\"hljs-params\"\u003E()\u003C\u002Fspan\u003E =&gt;\u003C\u002Fspan\u003E {\napp.use(nuxt.render)\n})\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Enuxt.renderAndGetWindow(jsdom, url)\u003C\u002Fcode\u003E method to render the url and sent back the \u003Ccode\u003Ewindow\u003C\u002Fcode\u003E object, useful for test purposes (see \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Fblob\u002Fmaster\u002Fexamples\u002Fwith-ava\u002Ftest\u002Findex.test.js#L43\"\u003Eexamples\u002Fwith-ava\u002F\u003C\u002Fa\u003E)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"examples\"\u003EExamples\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd authenticated routes example: \u003Ca href=\"https:\u002F\u002Fnuxtjs.org\u002Fexamples\u002Fauth-routes\"\u003Ehttps:\u002F\u002Fnuxtjs.org\u002Fexamples\u002Fauth-routes\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.9","date":"2016-12-04T18:21:25Z","body":"\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Eenv\u003C\u002Fcode\u003E in the data context argument\u003C\u002Fli\u003E\n\u003Cli\u003EAdd $nuxt.error({ statusCode, message }) method in the client side for calling the error page\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd generated name in the routes generates by the pages directory (ex pages\u002Findex.vue will me the \u003Ccode\u003Eindex\u003C\u002Fcode\u003E name, pages\u002Ffoo\u002Fbar.vue will be \u003Ccode\u003Efoo-bar\u003C\u002Fcode\u003E)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EFix router.base when set to &#39;\u002F&#39; or undefined, avoid generating 2 \u002F\u002F\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"misc\"\u003EMisc\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EStart working on the \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fauth-routes\"\u003Eexamples\u002Fauth-routes\u002F\u003C\u002Fa\u003E example\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.8","date":"2016-12-01T18:11:09Z","body":"\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EUpdate \u003Ccode\u003Evue-router\u003C\u002Fcode\u003E to v2.1.0\u003C\u002Fli\u003E\n\u003Cli\u003EAdd \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fcached-components\"\u003Eexamples\u002Fcached-components\u002F\u003C\u002Fa\u003E example\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.7","date":"2016-11-28T16:30:36Z","body":"\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EWe don&#39;t need to bind \u003Ccode\u003Enuxt.render.bind(nuxt)\u003C\u002Fcode\u003E anymore to use \u003Ccode\u003Enuxt.render\u003C\u002Fcode\u003E as a middleware (Issue #18)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.6","date":"2016-11-27T17:49:48Z","body":"\u003Ch1 id=\"bug-fixes\"\u003EBug fixes\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EMake sure to generate the \u003Ccode\u003E.nojekyll\u003C\u002Fcode\u003E file \u003Cstrong\u003Eempty\u003C\u002Fstrong\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.5","date":"2016-11-27T17:14:45Z","body":"\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ccode\u003Enuxt generate\u003C\u002Fcode\u003E now adds a \u003Ccode\u003E.nojekyll\u003C\u002Fcode\u003E file in the generated folder to tell Github Pages to \u003Cstrong\u003Enot\u003C\u002Fstrong\u003E ignore the \u003Ccode\u003E_nuxt\u003C\u002Fcode\u003E directory (see \u003Ca href=\"https:\u002F\u002Fhelp.github.com\u002Farticles\u002Ffiles-that-start-with-an-underscore-are-missing\u002F\"\u003Egithub pages docs\u003C\u002Fa\u003E about it)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"updates\"\u003EUpdates\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ccode\u003Enuxt init\u003C\u002Fcode\u003E has been remove, use \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fstarter\"\u003Enuxt\u002Fstarter\u003C\u002Fa\u003E instead\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.4","date":"2016-11-25T17:01:58Z","body":"\u003Ch1 id=\"breaking-changes\"\u003EBreaking Changes\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ccode\u003Epages\u002F_error-debug.vue\u003C\u002Fcode\u003E has been removed, now only \u003Ccode\u003Epages\u002F_error.vue\u003C\u002Fcode\u003E should be defined\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003EContent-Length\u003C\u002Fcode\u003E header in the server when rendering the html\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.3","date":"2016-11-25T14:42:53Z","body":"\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EYou can now access the application path with \u003Ccode\u003E˜\u003C\u002Fcode\u003E, useful if you have others folders, see #16 \u003C\u002Fli\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Eenv\u003C\u002Fcode\u003E property in \u003Ccode\u003Enuxt.config.js\u003C\u002Fcode\u003E, you can now define environment variables that will be shared across the components (\u003Cstrong\u003Eclient and server side\u003C\u002Fstrong\u003E), see #16 \u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ccode\u003Ewindow.onNuxtReady(callback)\u003C\u002Fcode\u003E is now a function, useful for attaching multiple functions to it, when is the app will be mounted, the callback will be called with the root application in the first argument\u003Cpre\u003E\u003Ccode class=\"hljs js\"\u003E\u003Cspan class=\"hljs-built_in\"\u003Ewindow\u003C\u002Fspan\u003E.onNuxtReady(\u003Cspan class=\"hljs-function\"\u003E\u003Cspan class=\"hljs-keyword\"\u003Efunction\u003C\u002Fspan\u003E (\u003Cspan class=\"hljs-params\"\u003Eapp\u003C\u002Fspan\u003E) \u003C\u002Fspan\u003E{\n\u003Cspan class=\"hljs-comment\"\u003E\u002F\u002F app is the $root vm\u003C\u002Fspan\u003E\n})\u003C\u002Fcode\u003E\u003C\u002Fpre\u003EIt is useful for test purposes or when defining plugins to launch when the app is mounted.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.2","date":"2016-11-24T13:42:47Z","body":"\u003Ch1 id=\"bug-fixes\"\u003EBug fixes\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EUse babel preset 2015 by default in .vue files to have the best compatibility possible in the browsers\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.1","date":"2016-11-24T12:18:15Z","body":"\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003ERemove vue-loaders \u003Ccode\u003Ejs\u003C\u002Fcode\u003E and \u003Ccode\u003Ecss\u003C\u002Fcode\u003E settings (let \u003Ccode\u003Evue-loader\u003C\u002Fcode\u003E handle it)\u003C\u002Fli\u003E\n\u003Cli\u003ECall the \u003Ccode\u003Estore.replaceState\u003C\u002Fcode\u003E once the app is instantiated\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.7.0","date":"2016-11-24T00:48:54Z","body":"\u003Ch1 id=\"breaking-changes\"\u003EBreaking Changes\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EIf you were using \u003Ccode\u003Eprocess.BROWSER\u003C\u002Fcode\u003E to add special code for the client bundle, please use \u003Ccode\u003Eprocess.BROWSER_BUILD\u003C\u002Fcode\u003E now. Also, \u003Ccode\u003Eprocess.SERVER_BUILD\u003C\u002Fcode\u003E has been added too.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd alias \u003Ccode\u003E~router\u003C\u002Fcode\u003E to import the \u003Ccode\u003Evue-router\u003C\u002Fcode\u003E router created by nuxt.js (can be useful to use \u003Ccode\u003Evuex-router-sync\u003C\u002Fcode\u003E for example.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003ECustom routes path with regexp are now working\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"dependencies\"\u003EDependencies\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EUpgrade \u003Ccode\u003Evue\u003C\u002Fcode\u003E to \u003Ccode\u003E2.1.2\u003C\u002Fcode\u003E\u003C\u002Fli\u003E\n\u003Cli\u003EUpgrade \u003Ccode\u003Evue-meta\u003C\u002Fcode\u003E to \u003Ccode\u003E0.5.2\u003C\u002Fcode\u003E\u003C\u002Fli\u003E\n\u003Cli\u003ERemove \u003Ccode\u003Eglob-promise\u003C\u002Fcode\u003E and only use \u003Ccode\u003Eglob\u003C\u002Fcode\u003E instead\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003E\u003Cem\u003EPS: working also on \u003Ccode\u003Enuxt generate\u003C\u002Fcode\u003E, to generate modern static websites with html files generated =&gt; Nuxt.js apps could be hosted on Github Pages 🔥\u003C\u002Fem\u003E\u003C\u002Fp\u003E\n"},{"name":"v0.6.9","date":"2016-11-23T13:06:23Z","body":"\u003Ch2 id=\"update-outdated-dependencies\"\u003EUpdate outdated dependencies\u003C\u002Fh2\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ccode\u003Eglob-promise\u003C\u002Fcode\u003E to v2.0.0\u003C\u002Fli\u003E\n\u003Cli\u003E\u003Ccode\u003Ecss-loader\u003C\u002Fcode\u003E to v0.26.0\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003ECheck Nuxt.js dependencies on \u003Ca href=\"https:\u002F\u002Fdavid-dm.org\u002Fnuxt\u002Fnuxt.js\"\u003Ehttps:\u002F\u002Fdavid-dm.org\u002Fnuxt\u002Fnuxt.js\u003C\u002Fa\u003E\u003C\u002Fp\u003E\n"},{"name":"v0.6.8","date":"2016-11-23T12:43:08Z","body":"\u003Ch2 id=\"upgrade-to-vue-2-1-0-and-vue-loader-10-0-0\"\u003EUpgrade to Vue 2.1.0 and Vue-loader 10.0.0\u003C\u002Fh2\u003E\n\u003Cul\u003E\n\u003Cli\u003ERemove \u003Ccode\u003Eprocess.env.VUE_ENV=server\u003C\u002Fcode\u003E since added automatically by \u003Ccode\u003Evue-server-renderer\u003C\u002Fcode\u003E now\u003C\u002Fli\u003E\n\u003Cli\u003EUpgrade \u003Ccode\u003Evue-server-renderer\u003C\u002Fcode\u003E to v2.1.0\u003C\u002Fli\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Evue-template-compiler\u003C\u002Fcode\u003E dependencies to \u003Ccode\u003E^2.1.0\u003C\u002Fcode\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.6.7","date":"2016-11-22T23:50:07Z","body":"\u003Ch1 id=\"feature\"\u003EFeature\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd option \u003Ccode\u003Ebuild.postcss\u003C\u002Fcode\u003E, defaults to:\u003Cpre\u003E\u003Ccode class=\"hljs js\"\u003E[\n\u003Cspan class=\"hljs-built_in\"\u003Erequire\u003C\u002Fspan\u003E(\u003Cspan class=\"hljs-string\"\u003E'autoprefixer'\u003C\u002Fspan\u003E)({\n  \u003Cspan class=\"hljs-attr\"\u003Ebrowsers\u003C\u002Fspan\u003E: [\u003Cspan class=\"hljs-string\"\u003E'last 3 versions'\u003C\u002Fspan\u003E]\n})\n]\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003EYou can update this option in \u003Ccode\u003Enuxt.config.js\u003C\u002Fcode\u003E, example:\u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode class=\"hljs js\"\u003E\u003Cspan class=\"hljs-built_in\"\u003Emodule\u003C\u002Fspan\u003E.exports = {\n  \u003Cspan class=\"hljs-attr\"\u003Epostcss\u003C\u002Fspan\u003E: [\n    \u003Cspan class=\"hljs-built_in\"\u003Erequire\u003C\u002Fspan\u003E(\u003Cspan class=\"hljs-string\"\u003E'postcss-cssnext'\u003C\u002Fspan\u003E)()\n  ]\n}\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E\u003Cp\u003EThis resolve the issue #14 \u003C\u002Fp\u003E\n"},{"name":"v0.6.6","date":"2016-11-22T23:28:02Z","body":"\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EForce to apply new data when using the same component in different routes (Vue.js patch system was not setting the $data)\u003C\u002Fli\u003E\n\u003Cli\u003EHot reloading when updating the template but \u003Ccode\u003Edata\u003C\u002Fcode\u003E and \u003Ccode\u003Efetch\u003C\u002Fcode\u003E not updated\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.6.5","date":"2016-11-21T19:44:24Z","body":"\u003Ch1 id=\"routes-transitions-\"\u003ERoutes transitions 🔥\u003C\u002Fh1\u003E\n\u003Cp\u003EDemonstration in video: \u003Ca href=\"https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=RIXOzJWFfc8\"\u003Ehttps:\u002F\u002Fwww.youtube.com\u002Fwatch?v=RIXOzJWFfc8\u003C\u002Fa\u003E\u003C\u002Fp\u003E\n\u003Cp\u003EYou can now add transition between routes thanks to the \u003Ccode\u003Etransition\u003C\u002Fcode\u003E key, see more details on \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Froutes-transitions\"\u003Eexamples\u002Froutes-transitions\u002F\u003C\u002Fa\u003E\u003C\u002Fp\u003E\n\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EYou can configure the port of the nuxt.js server via the package.json too #11 \u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.6.0","date":"2016-11-21T13:15:17Z","body":"\u003Ch1 id=\"new-features-\"\u003ENew features:\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EWe can now extend the root application by adding \u003Ccode\u003Epages\u002F_app.vue\u003C\u002Fcode\u003E. You can now add a navigation bar which stays whatever the page you&#39;re on (error pages included), see an \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fextend-app\"\u003Eexamples\u002Fextend-app\u002F\u003C\u002Fa\u003E for more details and documentation (you can also watch the \u003Ca href=\"https:\u002F\u002Fwww.youtube.com\u002Fwatch?v=wBhia7uBxDA\"\u003Eshort video example\u003C\u002Fa\u003E)\u003C\u002Fli\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Econtext.isDev\u003C\u002Fcode\u003E in the data(context) and fetch(context) methods, can be useful for caching some data calls on production\u003C\u002Fli\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Ecallback\u003C\u002Fcode\u003E argument (optional), in \u003Ccode\u003Edata(context [, callback])\u003C\u002Fcode\u003E method, because not everyone may be comfortable with using Promises. The callback is the node.js style: \u003Ccode\u003Ecallback(err, data)\u003C\u002Fcode\u003E, see \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fasync-data\"\u003Eexamples\u002Fasync-data\u002F\u003C\u002Fa\u003E for more details.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EBug with path with ~ inside (example: ~plugins\u002Fmy-plugin.js)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"documentation\"\u003EDocumentation\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Cstrong\u003EHandling errors\u003C\u002Fstrong\u003E section in \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fasync-data\"\u003Eexamples\u002Fasync-data\u002F\u003C\u002Fa\u003E and also explain how to use data with a \u003Ccode\u003Ecallback\u003C\u002Fcode\u003E.\u003C\u002Fli\u003E\n\u003Cli\u003EAdd README in \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fhead-elements\"\u003Eexamples\u002Fhead-elements\u002F\u003C\u002Fa\u003E, feel free to take a look at it to see how to update your app headers with Nuxt.js.\u003C\u002Fli\u003E\n\u003Cli\u003EAdd \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fextend-app\"\u003Eexamples\u002Fextend-app\u002F\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.5.3","date":"2016-11-20T13:50:19Z","body":"\u003Ch1 id=\"improvements\"\u003EImprovements\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003EContent-Type\u003C\u002Fcode\u003E: \u003Ccode\u003Etext\u002Fhtml; charset=utf-8\u003C\u002Fcode\u003E header\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.5.2","date":"2016-11-20T11:35:54Z","body":"\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EDuplicated components imported in router from custom routes\u003C\u002Fli\u003E\n\u003Cli\u003EHidden files from subdirectory\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.5.1","date":"2016-11-20T10:42:49Z","body":"\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003ENuxt.js is now working on Windows (thanks to @herreraemanuel)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.5.0","date":"2016-11-18T13:45:48Z","body":"\u003Ch1 id=\"feature\"\u003EFeature\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EWe can now use \u003Ccode\u003Emixins\u003C\u002Fcode\u003E or \u003Ccode\u003Eexport default Vue.extend({ ... })\u003C\u002Fcode\u003E inside the pages\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003ESide note, when exporting a page with \u003Ccode\u003EVue.extend\u003C\u002Fcode\u003E, the hot-reloading might have some difficulties to works perfectly.\u003C\u002Fp\u003E\n\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003ERemove a console.log\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.4.9","date":"2016-11-18T09:41:02Z","body":"\u003Ch1 id=\"babel-options\"\u003EBabel options\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EWe can now configure the \u003Ccode\u003Equery\u003C\u002Fcode\u003E of babel-loader via \u003Ccode\u003Ebuild.babel\u003C\u002Fcode\u003E option in \u003Ccode\u003Enuxt.config.js\u003C\u002Fcode\u003E.\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Cp\u003EDefaults are:\u003C\u002Fp\u003E\n\u003Cpre\u003E\u003Ccode class=\"hljs js\"\u003E{\n  \u003Cspan class=\"hljs-attr\"\u003Epresets\u003C\u002Fspan\u003E: [\n    [\u003Cspan class=\"hljs-string\"\u003E'es2015'\u003C\u002Fspan\u003E, { \u003Cspan class=\"hljs-attr\"\u003Emodules\u003C\u002Fspan\u003E: \u003Cspan class=\"hljs-literal\"\u003Efalse\u003C\u002Fspan\u003E }],\n    \u003Cspan class=\"hljs-string\"\u003E'stage-2'\u003C\u002Fspan\u003E\n  ],\n  \u003Cspan class=\"hljs-attr\"\u003EcacheDirectory\u003C\u002Fspan\u003E: \u003Cspan class=\"hljs-literal\"\u003Efalse\u003C\u002Fspan\u003E \u003Cspan class=\"hljs-comment\"\u003E\u002F\u002F true if launched via nuxt-dev\u003C\u002Fspan\u003E\n}\u003C\u002Fcode\u003E\u003C\u002Fpre\u003E"},{"name":"v0.4.8","date":"2016-11-18T08:20:23Z","body":"\u003Ch1 id=\"simplicity\"\u003ESimplicity\u003C\u002Fh1\u003E\n\u003Cp\u003EThe \u003Ccode\u003Estore\u003C\u002Fcode\u003E option has been removed in the \u003Ccode\u003Enuxt.config.js\u003C\u002Fcode\u003E file, it&#39;s now implicit.\u003C\u002Fp\u003E\n\u003Cp\u003EIf a \u003Ccode\u003Estore\u002Findex.js\u003C\u002Fcode\u003E file is detected, the store option will be activated and Vuex will be imported, see \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fvuex-store\"\u003Eexamples\u002Fvuex-store\u002F\u003C\u002Fa\u003E for more details.\u003C\u002Fp\u003E\n"},{"name":"v0.4.7","date":"2016-11-17T21:14:00Z","body":"\u003Ch1 id=\"feature\"\u003EFeature\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Ebuild.plugins\u003C\u002Fcode\u003E option in \u003Ccode\u003Enuxt.config.js\u003C\u002Fcode\u003E file to add custom plugin for webpack\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EFix error from the server-side when no component is found to render the route\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.4.6","date":"2016-11-17T13:03:53Z","body":"\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003ECall \u003Ccode\u003EnuxtServerInit\u003C\u002Fcode\u003E action in the store if defined, let you handle some use-cases with authenticated users for example (see \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fvuex-store#action-nuxtserverinit\"\u003Ehttps:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fvuex-store#action-nuxtserverinit\u003C\u002Fa\u003E)\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.4.4","date":"2016-11-17T10:59:06Z","body":"\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EAdd \u003Ccode\u003Econtext.error\u003C\u002Fcode\u003E method to show the error page from the \u003Ccode\u003Edata\u003C\u002Fcode\u003E or \u003Ccode\u003Efetch\u003C\u002Fcode\u003E method inside the pages, see \u003Ca href=\"https:\u002F\u002Fgithub.com\u002Fnuxt\u002Fnuxt.js\u002Ftree\u002Fmaster\u002Fexamples\u002Fcustom-routes\"\u003Eexample\u002Fcustom-routes\u002F\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EFix bugs with vue 2.0.6~7 and \u003Ccode\u003E_Ctor\u003C\u002Fcode\u003E #6 \u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.4.2","date":"2016-11-16T17:07:28Z","body":"\u003Ch1 id=\"fix\"\u003EFix\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EFix resolving path when using aliases on custom routes\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"},{"name":"v0.4.3","date":"2016-11-16T17:41:27Z","body":"\u003Ch1 id=\"features\"\u003EFeatures\u003C\u002Fh1\u003E\n\u003Cul\u003E\n\u003Cli\u003EWatch \u003Ccode\u003Enuxt.config.js\u003C\u002Fcode\u003E when using \u003Ccode\u003Enuxt-dev\u003C\u002Fcode\u003E to reload the build when updating the config file\u003C\u002Fli\u003E\n\u003C\u002Ful\u003E\n"}]}],"error":null,"state":{"version":"0.8.0","visibleHeader":false,"visibleAffix":false,"guideMenu":{"Prologue":[{"name":"What is Nuxt.js ?","to":""},{"name":"Contribution Guide","to":"\u002Fcontribution-guide"},{"name":"Release Notes","to":"\u002Frelease-notes"}],"Getting Started":[{"name":"Installation","to":"\u002Finstallation"},{"name":"Directory structure","to":"\u002Fdirectory-structure"},{"name":"Routing","to":"\u002Frouting"},{"name":"Pages","to":"\u002Fpages"},{"name":"Static files","to":"\u002Fstatic-files"},{"name":"Deployment","to":"\u002Fdeployment"}],"Customization":[{"name":"Configuration","to":"\u002Fconfiguration"},{"name":"Custom routes","to":"\u002Fcustom-routes"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Loading component","to":"\u002Floading-component"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Advanced":[{"name":"Async datas","to":"\u002Fasync-datas"},{"name":"Vuex store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]},"apiMenu":{"Nuxt Module":[{"name":"Usage","to":""},{"name":"Render","to":"\u002Fnuxt-render"},{"name":"RenderRoute","to":"\u002Fnuxt-render-route"}],"Configuration":[{"name":"Build","to":"\u002Fconfiguration-build"},{"name":"Cache","to":"\u002Fconfiguration-cache"},{"name":"CSS","to":"\u002Fconfiguration-css"},{"name":"Env","to":"\u002Fconfiguration-env"},{"name":"Generate","to":"\u002Fconfiguration-generate"},{"name":"Head","to":"\u002Fconfiguration-head"},{"name":"Loading","to":"\u002Fconfiguration-loading"},{"name":"Plugins","to":"\u002Fconfiguration-plugins"},{"name":"Router","to":"\u002Fconfiguration-router"}],"pages":[{"name":"Context","to":"\u002Fpages-context"},{"name":"Option: data","to":"\u002Fpages-data"},{"name":"Option: fetch","to":"\u002Fpages-fetch"},{"name":"Option: transition","to":"\u002Fpages-transition"},{"name":"_app.vue","to":"\u002Fpages-layout-app"},{"name":"_error.vue","to":"\u002Fpages-layout-error"},{"name":"_*.vue","to":"\u002Fpages-hidden"}],"store":[{"name":"Action nuxtServerInit","to":"\u002Fstore-nuxtserverinit"}],"Commands":[{"name":"Nuxt","to":"\u002Fcommands-nuxt"},{"name":"Nuxt build","to":"\u002Fcommands-nuxt-build"},{"name":"Nuxt start","to":"\u002Fcommands-nuxt-start"},{"name":"Nuxt generate","to":"\u002Fcommands-nuxt-generate"}]},"examplesMenu":{"Essentials":[{"name":"Hello world","to":""},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Customization":[{"name":"Cached Components","to":"\u002Fcached-components"},{"name":"Custom Loading","to":"\u002Fcustom-loading"},{"name":"Custom Routes","to":"\u002Fcustom-routes"},{"name":"Global CSS","to":"\u002Fglobal-css"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"}],"Advanced":[{"name":"Async Datas","to":"\u002Fasync-datas"},{"name":"Auth Routes","to":"\u002Fauth-routes"},{"name":"Vuex Store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]}},"serverRendered":true}</script>
+    <script src="/_nuxt/vendor.bundle.js" defer></script>
+    <script src="/_nuxt/nuxt.bundle.js" defer></script>
+  </body>
+</html>

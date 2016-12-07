@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html n-head-ssr n-head="">
+  <head>
+    <meta n-head="true" charset="utf-8"/><meta n-head="true" name="viewport" content="width=device-width, initial-scale=1"/><meta n-head="true" hid="description" name="description" content="Authenticated routes example with Nuxt.js"/>
+    <title n-head="true">Example: Auth Routes - Nuxt.js</title>
+    <link n-head="true" rel="icon" type="image/x-icon" href="favicon.ico"/>
+    
+    
+    
+    <base href="/">
+    <link rel="stylesheet" href="/_nuxt/style.css">
+  </head>
+  <body n-head="">
+    <div id="__nuxt" server-rendered="true"><header class="Header" data-v-6fcc5ae1><div class="container" data-v-6fcc5ae1><a href="/" class="Header__Title router-link-active" data-v-6fcc5ae1><img src="/_nuxt/img/logo_nav.png?be08efae0d5c46fd682e2a24f18545ae" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--desktop" data-v-6fcc5ae1> <img src="/_nuxt/img/logo_nav_mobile.png?f90e5a3d77508106e815f7179a322c02" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--mobile" data-v-6fcc5ae1> <h1 class="Header__Title__Text" data-v-6fcc5ae1>
+        NUXT
+      </h1></a> <div class="Header__Toggler" data-v-6fcc5ae1><div class="icon menu" data-v-6fcc5ae1></div></div> <nav class="Header__Nav Header__Nav--hidden" data-v-6fcc5ae1><ul class="Header__Nav__List" data-v-6fcc5ae1><li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/guide" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            GUIDE
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/api" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            API
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/examples" class="Header__Nav__List__Item__Link router-link-active" data-v-6fcc5ae1>
+            EXAMPLES
+          </a></li> <li class="Header__Nav__List__Item Header__Nav__List__Item--social" data-v-6fcc5ae1><a href="https://github.com/nuxt/nuxt.js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-git" data-v-6fcc5ae1></i></a> <a href="https://twitter.com/nuxt_js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-twit" data-v-6fcc5ae1></i></a></li></ul></nav></div></header> <div><div class="progress" style="width:0%;height:2px;background-color:#41B883;opacity:0" data-v-2aeb4e08></div> <div class="Examples" data-v-354ed3ae><div class="Bar" data-v-5925e26f data-v-354ed3ae><div class="container" data-v-5925e26f><div class="Bar__Left" data-v-5925e26f><span class="Bar__Left__Text" data-v-5925e26f>Version 0.8.0</span> <div class="Bar__Left__Toggler" data-v-5925e26f><div class="indent icon" data-v-5925e26f></div></div></div> <div class="Bar__Right" data-v-5925e26f><div class="Search" data-v-60d64f08 data-v-5925e26f><input type="text" name="search" id="search" placeholder="Search" value="" class="Search__Input" data-v-60d64f08> <label for="search" class="Search__Label" data-v-60d64f08><div class="icon search" data-v-60d64f08></div></label></div></div></div></div> <div class="Examples__Left Examples__Left--hidden" data-v-354ed3ae><div class="container" data-v-354ed3ae><nav class="Affix" data-v-0437d0ac data-v-354ed3ae><h3 class="Affix__Title" data-v-0437d0ac>Essentials</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Hello world
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/seo-html-head" class="Affix__List__Item__Link" data-v-0437d0ac>
+          SEO HTML Head
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Customization</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/cached-components" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Cached Components
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/custom-loading" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Custom Loading
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/custom-routes" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Custom Routes
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/global-css" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Global CSS
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/layouts" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Layouts
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/plugins" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Plugins
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/routes-transitions" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Routes transitions
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Advanced</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/async-datas" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Async Datas
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/auth-routes" class="Affix__List__Item__Link router-link-active" data-v-0437d0ac>
+          Auth Routes
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/vuex-store" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Vuex Store
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/examples/testing" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Testing
+        </a></li></ul></nav></div></div> <div class="container" data-v-354ed3ae><div class="Examples__Right" data-v-354ed3ae><div class="Content" data-v-354ed3ae><h1 data-v-354ed3ae>Auth Routes</h1> <blockquote data-v-354ed3ae><p data-v-354ed3ae>Authenticated routes example with Nuxt.js</p></blockquote> <!----> <h2 data-v-354ed3ae>Source Code</h2> <div class="FilesTree clearfix" data-v-df2e5dde data-v-354ed3ae><div class="FilesTree__Left" data-v-df2e5dde><div class="FilesTree__Left__Header" data-v-df2e5dde><div class="Icon" data-v-df2e5dde><div class="icon remove" data-v-df2e5dde></div></div>
+      Example Files
+    </div> <div class="FilesTree__Left__Body" data-v-df2e5dde><ul class="RecursiveList" data-v-4c658acc data-v-df2e5dde></ul></div></div> <!----></div> <div data-v-354ed3ae><a href="https://auth-routes.nuxtjs.org" target="_blank" class="button" data-v-354ed3ae><span data-v-354ed3ae><div class="icon eye" data-v-354ed3ae></div></span>
+            Live demo
+          </a> <a href="https://gomix.com/#!/project/nuxt-auth-routes" target="_blank" class="button" data-v-354ed3ae><span data-v-354ed3ae><div class="icon edit" data-v-354ed3ae></div></span>
+            Live edit
+          </a> <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/nuxt/nuxt.js/tree/master/examples/auth-routes" target="_blank" class="button" data-v-354ed3ae><span data-v-354ed3ae><div class="icon download" data-v-354ed3ae></div></span>
+            Download
+          </a></div> <div data-v-354ed3ae><h1 id="documentation">Documentation</h1>
+<blockquote>
+<p>Nuxt.js can be used to create authenticated routes easily.</p>
+</blockquote>
+<h2 id="using-express-and-sessions">Using Express and Sessions</h2>
+<p>To add the sessions feature in our application, we will use <code>express</code> and <code>express-session</code>, for this, we need to use Nuxt.js programmatically.</p>
+<p>First, we install the depedencies:</p>
+<pre><code class="hljs bash">yarn add express express-session body-parser whatwg-fetch</code></pre><p><em>We will talk about <code>whatwg-fetch</code> later.</em></p>
+<p>Then we create our <code>server.js</code>:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">const</span> Nuxt = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nuxt'</span>)
+<span class="hljs-keyword">const</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'body-parser'</span>)
+<span class="hljs-keyword">const</span> session = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express-session'</span>)
+<span class="hljs-keyword">const</span> app = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>)()
+
+<span class="hljs-comment">// Body parser, to access req.body</span>
+app.use(bodyParser.json())
+
+<span class="hljs-comment">// Sessions to create req.session</span>
+app.use(session({
+  <span class="hljs-attr">secret</span>: <span class="hljs-string">'super-secret-key'</span>,
+  <span class="hljs-attr">resave</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">saveUninitialized</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">cookie</span>: { <span class="hljs-attr">maxAge</span>: <span class="hljs-number">60000</span> }
+}))
+
+<span class="hljs-comment">// POST /api/login to log in the user and add him to the req.session.authUser</span>
+app.post(<span class="hljs-string">'/api/login'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-keyword">if</span> (req.body.username === <span class="hljs-string">'demo'</span> &amp;&amp; req.body.password === <span class="hljs-string">'demo'</span>) {
+    req.session.authUser = { <span class="hljs-attr">username</span>: <span class="hljs-string">'demo'</span> }
+    <span class="hljs-keyword">return</span> res.json({ <span class="hljs-attr">username</span>: <span class="hljs-string">'demo'</span> })
+  }
+  res.status(<span class="hljs-number">401</span>).json({ <span class="hljs-attr">error</span>: <span class="hljs-string">'Bad credentials'</span> })
+})
+
+<span class="hljs-comment">// POST /api/logout to log out the user and remove it from the req.session</span>
+app.post(<span class="hljs-string">'/api/logout'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-keyword">delete</span> req.session.authUser
+  res.json({ <span class="hljs-attr">ok</span>: <span class="hljs-literal">true</span> })
+})
+
+<span class="hljs-comment">// We instantiate Nuxt.js with the options</span>
+<span class="hljs-keyword">const</span> isProd = process.env.NODE_ENV === <span class="hljs-string">'production'</span>
+<span class="hljs-keyword">const</span> nuxt = <span class="hljs-keyword">new</span> Nuxt({ <span class="hljs-attr">dev</span>: !isProd })
+<span class="hljs-comment">// No build in production</span>
+<span class="hljs-keyword">const</span> promise = (isProd ? <span class="hljs-built_in">Promise</span>.resolve() : nuxt.build())
+promise.then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  app.use(nuxt.render)
+  app.listen(<span class="hljs-number">3000</span>)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Server is listening on http://localhost:3000'</span>)
+})
+.catch(<span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> {
+  <span class="hljs-built_in">console</span>.error(error)
+  process.exit(<span class="hljs-number">1</span>)
+})</code></pre><p>And we update our <code>package.json</code> scripts:</p>
+<pre><code class="hljs json">// ...
+"scripts": {
+  "dev": "node server.js",
+  "build": "nuxt build",
+  "start": "NODE_ENV=production node server.js"
+}
+// ...</code></pre><h2 id="using-the-store">Using the store</h2>
+<p>We need a global state to let our application if the user is connected <strong>across the pages</strong>.</p>
+<p>To let Nuxt.js use Vuex, we create a <code>store/index.js</code> file:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> Vuex <span class="hljs-keyword">from</span> <span class="hljs-string">'vuex'</span>
+
+Vue.use(Vuex)
+
+<span class="hljs-comment">// Polyfill for window.fetch()</span>
+<span class="hljs-built_in">require</span>(<span class="hljs-string">'whatwg-fetch'</span>)
+
+<span class="hljs-keyword">const</span> store = <span class="hljs-keyword">new</span> Vuex.Store({
+
+  <span class="hljs-attr">state</span>: {
+    <span class="hljs-attr">authUser</span>: <span class="hljs-literal">null</span>
+  },
+
+  <span class="hljs-attr">mutations</span>: {
+    <span class="hljs-attr">SET_USER</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state, user</span>) </span>{
+      state.authUser = user
+    }
+  },
+
+  <span class="hljs-attr">actions</span>: {
+    <span class="hljs-comment">// ...</span>
+  }
+
+})
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store</code></pre><ol>
+<li>We import <code>Vue</code> and <code>Vuex</code> (included in Nuxt.js) and we tell Vue to use Vuex to let us use <code>$store</code> in our components</li>
+<li>We <code>require(&#39;whatwg-fetch&#39;)</code> to polyfill the <code>fetch()</code> method across all browsers (see <a href="https://github.com/github/fetch">fetch repo</a>)</li>
+<li>We create our <code>SET_USER</code> mutation which will set the <code>state.authUser</code> to the conntected user</li>
+<li>We export our store instance to Nuxt.js can inject it to our main application</li>
+</ol>
+<h3 id="nuxtserverinit-action">nuxtServerInit() action</h3>
+<p>Nuxt.js will call a specific action called <code>nuxtServerInit</code> with the context in argument, so when the app will be loaded, the store will be already filled with some data we can get from the server.</p>
+<p>In our <code>store/index.js</code>, we can add the <code>nuxtServerInit</code> action:</p>
+<pre><code class="hljs js">nuxtServerInit ({ commit }, { req }) {
+  <span class="hljs-keyword">if</span> (req.session &amp;&amp; req.session.authUser) {
+    commit(<span class="hljs-string">'SET_USER'</span>, req.session.authUser)
+  }
+}</code></pre><h3 id="login-action">login() action</h3>
+<p>We add a <code>login</code> action which will be called from our pages component to log in the user:</p>
+<pre><code class="hljs js">login ({ commit }, { username, password }) {
+  <span class="hljs-keyword">return</span> fetch(<span class="hljs-string">'/api/login'</span>, {
+    <span class="hljs-comment">// Send the client cookies to the server</span>
+    credentials: <span class="hljs-string">'same-origin'</span>,
+    <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>,
+    <span class="hljs-attr">headers</span>: {
+      <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>
+    },
+    <span class="hljs-attr">body</span>: <span class="hljs-built_in">JSON</span>.stringify({
+      username,
+      password
+    })
+  })
+  .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-keyword">if</span> (res.status === <span class="hljs-number">401</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">'Bad credentials'</span>)
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> res.json()
+    }
+  })
+  .then(<span class="hljs-function">(<span class="hljs-params">authUser</span>) =&gt;</span> {
+    commit(<span class="hljs-string">'SET_USER'</span>, authUser)
+  })
+}</code></pre><h3 id="logout-method">logout() method</h3>
+<pre><code class="hljs js">logout ({ commit }) {
+  <span class="hljs-keyword">return</span> fetch(<span class="hljs-string">'/api/logout'</span>, {
+    <span class="hljs-comment">// Send the client cookies to the server</span>
+    credentials: <span class="hljs-string">'same-origin'</span>,
+    <span class="hljs-attr">method</span>: <span class="hljs-string">'POST'</span>
+  })
+  .then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    commit(<span class="hljs-string">'SET_USER'</span>, <span class="hljs-literal">null</span>)
+  })
+}</code></pre><h2 id="pages-components">Pages components</h2>
+<p>Then we can use <code>$store.state.authUser</code> in our pages components to check if the user is connected in our application or not.</p>
+<h3 id="redirect-user-if-not-connected">Redirect user if not connected</h3>
+<p>Let&#39;s add a <code>/secret</code> route where only the connected user can see its content:</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Super secret page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">router-link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span>&gt;</span>Back to the home page<span class="hljs-tag">&lt;/<span class="hljs-name">router-link</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-comment">// we use fetch() because we do not need to set data to this component</span>
+  fetch ({ store, redirect }) {
+    <span class="hljs-keyword">if</span> (!store.state.authUser) {
+      <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">'/'</span>)
+    }
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre><p>We can see in the <code>fetch</code> method that we call <code>redirect(&#39;/&#39;)</code> when our user is not connected.</p>
+</div></div></div></div> <div class="Examples__Footer" data-v-354ed3ae><footer class="Footer" data-v-4e99f6ef data-v-354ed3ae><div class="container" data-v-4e99f6ef><div class="Footer__Text" data-v-4e99f6ef>
+      Made by Chopin Brothers:
+      <a href="https://github.com/Atinux" target="_blank" data-v-4e99f6ef>@Atinux</a>
+      and
+      <a href="https://github.com/alexchopin" target="_blank" data-v-4e99f6ef>@alexchopin</a></div></div></footer></div></div></div></div>
+    <script type="text/javascript" defer>window.__NUXT__={"data":[{"content":"---\ntitle: Auth Routes\ndescription: Authenticated routes example with Nuxt.js\ngithub: auth-routes\nlivedemo: https:\u002F\u002Fauth-routes.nuxtjs.org\nliveedit: https:\u002F\u002Fgomix.com\u002F#!\u002Fproject\u002Fnuxt-auth-routes\n---\n\n# Documentation\n\n\u003E Nuxt.js can be used to create authenticated routes easily.\n\n## Using Express and Sessions\n\nTo add the sessions feature in our application, we will use `express` and `express-session`, for this, we need to use Nuxt.js programmatically.\n\nFirst, we install the depedencies:\n```bash\nyarn add express express-session body-parser whatwg-fetch\n```\n\n*We will talk about `whatwg-fetch` later.*\n\nThen we create our `server.js`:\n```js\nconst Nuxt = require('nuxt')\nconst bodyParser = require('body-parser')\nconst session = require('express-session')\nconst app = require('express')()\n\n\u002F\u002F Body parser, to access req.body\napp.use(bodyParser.json())\n\n\u002F\u002F Sessions to create req.session\napp.use(session({\n  secret: 'super-secret-key',\n  resave: false,\n  saveUninitialized: false,\n  cookie: { maxAge: 60000 }\n}))\n\n\u002F\u002F POST \u002Fapi\u002Flogin to log in the user and add him to the req.session.authUser\napp.post('\u002Fapi\u002Flogin', function (req, res) {\n  if (req.body.username === 'demo' && req.body.password === 'demo') {\n    req.session.authUser = { username: 'demo' }\n    return res.json({ username: 'demo' })\n  }\n  res.status(401).json({ error: 'Bad credentials' })\n})\n\n\u002F\u002F POST \u002Fapi\u002Flogout to log out the user and remove it from the req.session\napp.post('\u002Fapi\u002Flogout', function (req, res) {\n  delete req.session.authUser\n  res.json({ ok: true })\n})\n\n\u002F\u002F We instantiate Nuxt.js with the options\nconst isProd = process.env.NODE_ENV === 'production'\nconst nuxt = new Nuxt({ dev: !isProd })\n\u002F\u002F No build in production\nconst promise = (isProd ? Promise.resolve() : nuxt.build())\npromise.then(() =\u003E {\n  app.use(nuxt.render)\n  app.listen(3000)\n  console.log('Server is listening on http:\u002F\u002Flocalhost:3000')\n})\n.catch((error) =\u003E {\n  console.error(error)\n  process.exit(1)\n})\n```\n\nAnd we update our `package.json` scripts:\n```json\n\u002F\u002F ...\n\"scripts\": {\n  \"dev\": \"node server.js\",\n  \"build\": \"nuxt build\",\n  \"start\": \"NODE_ENV=production node server.js\"\n}\n\u002F\u002F ...\n```\n\n## Using the store\n\nWe need a global state to let our application if the user is connected **across the pages**.\n\nTo let Nuxt.js use Vuex, we create a `store\u002Findex.js` file:\n\n```js\nimport Vue from 'vue'\nimport Vuex from 'vuex'\n\nVue.use(Vuex)\n\n\u002F\u002F Polyfill for window.fetch()\nrequire('whatwg-fetch')\n\nconst store = new Vuex.Store({\n\n  state: {\n    authUser: null\n  },\n\n  mutations: {\n    SET_USER: function (state, user) {\n      state.authUser = user\n    }\n  },\n\n  actions: {\n    \u002F\u002F ...\n  }\n\n})\n\nexport default store\n```\n\n1. We import `Vue` and `Vuex` (included in Nuxt.js) and we tell Vue to use Vuex to let us use `$store` in our components\n2. We `require('whatwg-fetch')` to polyfill the `fetch()` method across all browsers (see [fetch repo](https:\u002F\u002Fgithub.com\u002Fgithub\u002Ffetch))\n3. We create our `SET_USER` mutation which will set the `state.authUser` to the conntected user\n4. We export our store instance to Nuxt.js can inject it to our main application\n\n### nuxtServerInit() action\n\nNuxt.js will call a specific action called `nuxtServerInit` with the context in argument, so when the app will be loaded, the store will be already filled with some data we can get from the server.\n\nIn our `store\u002Findex.js`, we can add the `nuxtServerInit` action:\n```js\nnuxtServerInit ({ commit }, { req }) {\n  if (req.session && req.session.authUser) {\n    commit('SET_USER', req.session.authUser)\n  }\n}\n```\n\n### login() action\n\nWe add a `login` action which will be called from our pages component to log in the user:\n```js\nlogin ({ commit }, { username, password }) {\n  return fetch('\u002Fapi\u002Flogin', {\n    \u002F\u002F Send the client cookies to the server\n    credentials: 'same-origin',\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application\u002Fjson'\n    },\n    body: JSON.stringify({\n      username,\n      password\n    })\n  })\n  .then((res) =\u003E {\n    if (res.status === 401) {\n      throw new Error('Bad credentials')\n    } else {\n      return res.json()\n    }\n  })\n  .then((authUser) =\u003E {\n    commit('SET_USER', authUser)\n  })\n}\n```\n\n### logout() method\n\n```js\nlogout ({ commit }) {\n  return fetch('\u002Fapi\u002Flogout', {\n    \u002F\u002F Send the client cookies to the server\n    credentials: 'same-origin',\n    method: 'POST'\n  })\n  .then(() =\u003E {\n    commit('SET_USER', null)\n  })\n}\n```\n\n## Pages components\n\nThen we can use `$store.state.authUser` in our pages components to check if the user is connected in our application or not.\n\n### Redirect user if not connected\n\nLet's add a `\u002Fsecret` route where only the connected user can see its content:\n```html\n\u003Ctemplate\u003E\n  \u003Cdiv\u003E\n    \u003Ch1\u003ESuper secret page\u003C\u002Fh1\u003E\n    \u003Crouter-link to=\"\u002F\"\u003EBack to the home page\u003C\u002Frouter-link\u003E\n  \u003C\u002Fdiv\u003E\n\u003C\u002Ftemplate\u003E\n\n\u003Cscript\u003E\nexport default {\n  \u002F\u002F we use fetch() because we do not need to set data to this component\n  fetch ({ store, redirect }) {\n    if (!store.state.authUser) {\n      return redirect('\u002F')\n    }\n  }\n}\n\u003C\u002Fscript\u003E\n```\n\nWe can see in the `fetch` method that we call `redirect('\u002F')` when our user is not connected.\n"}],"error":null,"state":{"version":"0.8.0","visibleHeader":false,"visibleAffix":false,"guideMenu":{"Prologue":[{"name":"What is Nuxt.js ?","to":""},{"name":"Contribution Guide","to":"\u002Fcontribution-guide"},{"name":"Release Notes","to":"\u002Frelease-notes"}],"Getting Started":[{"name":"Installation","to":"\u002Finstallation"},{"name":"Directory structure","to":"\u002Fdirectory-structure"},{"name":"Routing","to":"\u002Frouting"},{"name":"Pages","to":"\u002Fpages"},{"name":"Static files","to":"\u002Fstatic-files"},{"name":"Deployment","to":"\u002Fdeployment"}],"Customization":[{"name":"Configuration","to":"\u002Fconfiguration"},{"name":"Custom routes","to":"\u002Fcustom-routes"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Loading component","to":"\u002Floading-component"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Advanced":[{"name":"Async datas","to":"\u002Fasync-datas"},{"name":"Vuex store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]},"apiMenu":{"Nuxt Module":[{"name":"Usage","to":""},{"name":"Render","to":"\u002Fnuxt-render"},{"name":"RenderRoute","to":"\u002Fnuxt-render-route"}],"Configuration":[{"name":"Build","to":"\u002Fconfiguration-build"},{"name":"Cache","to":"\u002Fconfiguration-cache"},{"name":"CSS","to":"\u002Fconfiguration-css"},{"name":"Env","to":"\u002Fconfiguration-env"},{"name":"Generate","to":"\u002Fconfiguration-generate"},{"name":"Head","to":"\u002Fconfiguration-head"},{"name":"Loading","to":"\u002Fconfiguration-loading"},{"name":"Plugins","to":"\u002Fconfiguration-plugins"},{"name":"Router","to":"\u002Fconfiguration-router"}],"pages":[{"name":"Context","to":"\u002Fpages-context"},{"name":"Option: data","to":"\u002Fpages-data"},{"name":"Option: fetch","to":"\u002Fpages-fetch"},{"name":"Option: transition","to":"\u002Fpages-transition"},{"name":"_app.vue","to":"\u002Fpages-layout-app"},{"name":"_error.vue","to":"\u002Fpages-layout-error"},{"name":"_*.vue","to":"\u002Fpages-hidden"}],"store":[{"name":"Action nuxtServerInit","to":"\u002Fstore-nuxtserverinit"}],"Commands":[{"name":"Nuxt","to":"\u002Fcommands-nuxt"},{"name":"Nuxt build","to":"\u002Fcommands-nuxt-build"},{"name":"Nuxt start","to":"\u002Fcommands-nuxt-start"},{"name":"Nuxt generate","to":"\u002Fcommands-nuxt-generate"}]},"examplesMenu":{"Essentials":[{"name":"Hello world","to":""},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Customization":[{"name":"Cached Components","to":"\u002Fcached-components"},{"name":"Custom Loading","to":"\u002Fcustom-loading"},{"name":"Custom Routes","to":"\u002Fcustom-routes"},{"name":"Global CSS","to":"\u002Fglobal-css"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"}],"Advanced":[{"name":"Async Datas","to":"\u002Fasync-datas"},{"name":"Auth Routes","to":"\u002Fauth-routes"},{"name":"Vuex Store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]}},"serverRendered":true}</script>
+    <script src="/_nuxt/vendor.bundle.js" defer></script>
+    <script src="/_nuxt/nuxt.bundle.js" defer></script>
+  </body>
+</html>

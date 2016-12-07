@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html n-head-ssr n-head="">
+  <head>
+    <meta n-head="true" charset="utf-8"/><meta n-head="true" name="viewport" content="width=device-width, initial-scale=1"/><meta n-head="true" hid="description" content="Nuxt.js is a minimal framework for creating Vue.js applications with server side rendering, code-splitting, hot-reloading, static generation and more!"/>
+    <title n-head="true">API: page.data - Nuxt.js</title>
+    <link n-head="true" rel="icon" type="image/x-icon" href="favicon.ico"/>
+    
+    
+    
+    <base href="/">
+    <link rel="stylesheet" href="/_nuxt/style.css">
+  </head>
+  <body n-head="">
+    <div id="__nuxt" server-rendered="true"><header class="Header" data-v-6fcc5ae1><div class="container" data-v-6fcc5ae1><a href="/" class="Header__Title router-link-active" data-v-6fcc5ae1><img src="/_nuxt/img/logo_nav.png?be08efae0d5c46fd682e2a24f18545ae" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--desktop" data-v-6fcc5ae1> <img src="/_nuxt/img/logo_nav_mobile.png?f90e5a3d77508106e815f7179a322c02" alt="Logo nuxt" class="Header__Title__Logo Header__Title__Logo--mobile" data-v-6fcc5ae1> <h1 class="Header__Title__Text" data-v-6fcc5ae1>
+        NUXT
+      </h1></a> <div class="Header__Toggler" data-v-6fcc5ae1><div class="icon menu" data-v-6fcc5ae1></div></div> <nav class="Header__Nav Header__Nav--hidden" data-v-6fcc5ae1><ul class="Header__Nav__List" data-v-6fcc5ae1><li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/guide" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            GUIDE
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/api" class="Header__Nav__List__Item__Link router-link-active" data-v-6fcc5ae1>
+            API
+          </a></li> <li class="Header__Nav__List__Item" data-v-6fcc5ae1><a href="/examples" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1>
+            EXAMPLES
+          </a></li> <li class="Header__Nav__List__Item Header__Nav__List__Item--social" data-v-6fcc5ae1><a href="https://github.com/nuxt/nuxt.js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-git" data-v-6fcc5ae1></i></a> <a href="https://twitter.com/nuxt_js" target="_blank" class="Header__Nav__List__Item__Link" data-v-6fcc5ae1><i class="icon-twit" data-v-6fcc5ae1></i></a></li></ul></nav></div></header> <div><div class="progress" style="width:0%;height:2px;background-color:#41B883;opacity:0" data-v-2aeb4e08></div> <div class="API" data-v-47f03eea><div class="Bar" data-v-5925e26f data-v-47f03eea><div class="container" data-v-5925e26f><div class="Bar__Left" data-v-5925e26f><span class="Bar__Left__Text" data-v-5925e26f>Version 0.8.0</span> <div class="Bar__Left__Toggler" data-v-5925e26f><div class="indent icon" data-v-5925e26f></div></div></div> <div class="Bar__Right" data-v-5925e26f><div class="Search" data-v-60d64f08 data-v-5925e26f><input type="text" name="search" id="search" placeholder="Search" value="" class="Search__Input" data-v-60d64f08> <label for="search" class="Search__Label" data-v-60d64f08><div class="icon search" data-v-60d64f08></div></label></div></div></div></div> <div class="API__Left API__Left--hidden" data-v-47f03eea><div class="container" data-v-47f03eea><nav class="Affix" data-v-0437d0ac data-v-47f03eea><h3 class="Affix__Title" data-v-0437d0ac>Nuxt Module</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Usage
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/nuxt-render" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Render
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/nuxt-render-route" class="Affix__List__Item__Link" data-v-0437d0ac>
+          RenderRoute
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Configuration</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-build" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Build
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-cache" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Cache
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-css" class="Affix__List__Item__Link" data-v-0437d0ac>
+          CSS
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-env" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Env
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-generate" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Generate
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-head" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Head
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-loading" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Loading
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-plugins" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Plugins
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/configuration-router" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Router
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>pages</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-context" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Context
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-data" class="Affix__List__Item__Link router-link-active" data-v-0437d0ac>
+          Option: data
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-fetch" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Option: fetch
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-transition" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Option: transition
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-layout-app" class="Affix__List__Item__Link" data-v-0437d0ac>
+          _app.vue
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-layout-error" class="Affix__List__Item__Link" data-v-0437d0ac>
+          _error.vue
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/pages-hidden" class="Affix__List__Item__Link" data-v-0437d0ac>
+          _*.vue
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>store</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/store-nuxtserverinit" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Action nuxtServerInit
+        </a></li></ul><h3 class="Affix__Title" data-v-0437d0ac>Commands</h3> <ul class="Affix__List" data-v-0437d0ac><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt-build" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt build
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt-start" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt start
+        </a></li><li class="Affix__List__Item" data-v-0437d0ac><a href="/api/commands-nuxt-generate" class="Affix__List__Item__Link" data-v-0437d0ac>
+          Nuxt generate
+        </a></li></ul></nav></div></div> <div class="container" data-v-47f03eea><div class="API__Right" data-v-47f03eea><div class="Content Content" data-v-47f03eea><h1 id="pages-data">Pages data</h1>
+<p>Nuxt.js supercharges the pages component by overwriting the <a href="https://vuejs.org/v2/api/#data">Vue.js data</a> option. This way, the page component can make asynchronous operations before returning the component real data.</p>
+<div class="Alert Alert--blue">The <code>data</code> option is called every time before loading the component. It is called from the server-side or before navigating to the corresponding route.</div>
+
+<h2 id="data-context-">data(context)</h2>
+<ul>
+<li><strong>Type:</strong> <code>Function</code></li>
+<li><strong>Arguments:</strong><ul>
+<li><code>Object</code>, see <a href="/api/pages-context">context</a></li>
+</ul>
+</li>
+<li><strong>Return:</strong> <code>Object | Promise</code></li>
+</ul>
+<h3 id="details">Details</h3>
+<div class="Alert Alert--orange">You do <strong>NOT</strong> have access of the component instance trough <code>this</code> inside <code>data</code> because it is called <strong>before initiating</strong> the component.</div>
+
+<p>The data method receives the context as the first argument, you can use it to fetch some data and return the component data. To make the data method asynchronous, Nuxt.js offers you 2 ways, choose the one you&#39;re the most familiar with:</p>
+<ol>
+<li>Returning a <code>Promise</code>, Nuxt.js will wait for the promise to be resolved before rendering the Component</li>
+<li>Define a second argument which is a <code>callback</code> method to be called like this: <code>callback(err, data)</code></li>
+</ol>
+<h3 id="returning-an-object">Returning an Object</h3>
+<p>You can use <code>data</code> like the Vue.js way if you don&#39;t need to do any asynchronous call:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data (context) {
+    <span class="hljs-keyword">return</span> { <span class="hljs-attr">foo</span>: <span class="hljs-string">'bar'</span> }
+  }
+}</code></pre><h3 id="returning-a-promise">Returning a Promise</h3>
+<p>Nuxt.js can wait before setting the component data, simply return a <code>Promise</code> and Nuxt.js will wait for it to be resolved:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">'axios'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data ({ params }) {
+    <span class="hljs-keyword">return</span> axios.get(<span class="hljs-string">`https://my-api/posts/<span class="hljs-subst">${params.id}</span>`</span>)
+    .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">title</span>: res.data.title }
+    })
+  }
+}</code></pre><h3 id="using-the-callback-argument">Using the callback argument</h3>
+<p>If you are not familiar of using the promises, you can use the callback argument:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">'axios'</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data ({ params }, callback) {
+    axios.get(<span class="hljs-string">`https://my-api/posts/<span class="hljs-subst">${params.id}</span>`</span>)
+    .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+      callback(<span class="hljs-literal">null</span>, { <span class="hljs-attr">title</span>: res.data.title })
+    })
+  }
+}</code></pre><h2 id="handling-errors">Handling Errors</h2>
+<p>Nuxt.js add the <code>error(params)</code> method in the context, you can call it to display the error page (<code>pages/_error.vue</code>).</p>
+<p>Params:</p>
+<ul>
+<li><code>statusCode</code> (<code>Number</code>): status code used to render the proper status code form the server-side</li>
+<li><code>message</code> (<code>String</code>): message displayed in the error page</li>
+</ul>
+<p>Example with a Promise:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data ({ params, error }) {
+    <span class="hljs-keyword">return</span> axios.get(<span class="hljs-string">`https://my-api/posts/<span class="hljs-subst">${params.id}</span>`</span>)
+    .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> ...)
+    .catch(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+      error({ <span class="hljs-attr">statusCode</span>: <span class="hljs-number">404</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'Post not found'</span> })
+    })
+  }
+}</code></pre><p>If you&#39;re using the callback argument, you can call it directly with the error, Nuxt.js will call the error method for you:</p>
+<pre><code class="hljs js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  data ({ params }, callback) {
+    axios.get(<span class="hljs-string">`https://my-api/posts/<span class="hljs-subst">${params.id}</span>`</span>)
+    .then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> ...)
+    .catch(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+      callback({ <span class="hljs-attr">statusCode</span>: <span class="hljs-number">404</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'Post not found'</span> })
+    })
+  }
+}</code></pre></div> <p class="API__Contribute" data-v-47f03eea>Caught a mistake or want to contribute to the documentation?
+        <a href="https://github.com/nuxt/docs/blob/master/api/pages-data.md" target="_blank" class="link" data-v-47f03eea>
+          Edit this page on Github!
+        </a></p></div></div> <div class="API__Footer" data-v-47f03eea><footer class="Footer" data-v-4e99f6ef data-v-47f03eea><div class="container" data-v-4e99f6ef><div class="Footer__Text" data-v-4e99f6ef>
+      Made by Chopin Brothers:
+      <a href="https://github.com/Atinux" target="_blank" data-v-4e99f6ef>@Atinux</a>
+      and
+      <a href="https://github.com/alexchopin" target="_blank" data-v-4e99f6ef>@alexchopin</a></div></div></footer></div></div></div></div>
+    <script type="text/javascript" defer>window.__NUXT__={"data":[{"content":"---\ntitle: page.data\n---\n\n# Pages data\n\nNuxt.js supercharges the pages component by overwriting the [Vue.js data](https:\u002F\u002Fvuejs.org\u002Fv2\u002Fapi\u002F#data) option. This way, the page component can make asynchronous operations before returning the component real data.\n\n\u003Cdiv class=\"Alert Alert--blue\"\u003EThe `data` option is called every time before loading the component. It is called from the server-side or before navigating to the corresponding route.\u003C\u002Fdiv\u003E\n\n## data(context)\n\n- **Type:** `Function`\n- **Arguments:**\n  - `Object`, see [context](\u002Fapi\u002Fpages-context)\n- **Return:** `Object | Promise`\n\n### Details\n\n\u003Cdiv class=\"Alert Alert--orange\"\u003EYou do **NOT** have access of the component instance trough `this` inside `data` because it is called **before initiating** the component.\u003C\u002Fdiv\u003E\n\nThe data method receives the context as the first argument, you can use it to fetch some data and return the component data. To make the data method asynchronous, Nuxt.js offers you 2 ways, choose the one you're the most familiar with:\n\n1. Returning a `Promise`, Nuxt.js will wait for the promise to be resolved before rendering the Component\n2. Define a second argument which is a `callback` method to be called like this: `callback(err, data)`\n\n### Returning an Object\n\nYou can use `data` like the Vue.js way if you don't need to do any asynchronous call:\n\n```js\nexport default {\n  data (context) {\n    return { foo: 'bar' }\n  }\n}\n```\n\n### Returning a Promise\n\nNuxt.js can wait before setting the component data, simply return a `Promise` and Nuxt.js will wait for it to be resolved:\n\n```js\nimport axios from 'axios'\n\nexport default {\n  data ({ params }) {\n    return axios.get(`https:\u002F\u002Fmy-api\u002Fposts\u002F${params.id}`)\n    .then((res) =\u003E {\n      return { title: res.data.title }\n    })\n  }\n}\n```\n\n### Using the callback argument\n\nIf you are not familiar of using the promises, you can use the callback argument:\n\n```js\nimport axios from 'axios'\n\nexport default {\n  data ({ params }, callback) {\n    axios.get(`https:\u002F\u002Fmy-api\u002Fposts\u002F${params.id}`)\n    .then((res) =\u003E {\n      callback(null, { title: res.data.title })\n    })\n  }\n}\n```\n\n## Handling Errors\n\nNuxt.js add the `error(params)` method in the context, you can call it to display the error page (`pages\u002F_error.vue`).\n\nParams:\n- `statusCode` (`Number`): status code used to render the proper status code form the server-side\n- `message` (`String`): message displayed in the error page\n\nExample with a Promise:\n```js\nexport default {\n  data ({ params, error }) {\n    return axios.get(`https:\u002F\u002Fmy-api\u002Fposts\u002F${params.id}`)\n    .then((res) =\u003E ...)\n    .catch((e) =\u003E {\n      error({ statusCode: 404, message: 'Post not found' })\n    })\n  }\n}\n```\nIf you're using the callback argument, you can call it directly with the error, Nuxt.js will call the error method for you:\n```js\nexport default {\n  data ({ params }, callback) {\n    axios.get(`https:\u002F\u002Fmy-api\u002Fposts\u002F${params.id}`)\n    .then((res) =\u003E ...)\n    .catch((e) =\u003E {\n      callback({ statusCode: 404, message: 'Post not found' })\n    })\n  }\n}\n```\n","path":"pages-data"}],"error":null,"state":{"version":"0.8.0","visibleHeader":false,"visibleAffix":false,"guideMenu":{"Prologue":[{"name":"What is Nuxt.js ?","to":""},{"name":"Contribution Guide","to":"\u002Fcontribution-guide"},{"name":"Release Notes","to":"\u002Frelease-notes"}],"Getting Started":[{"name":"Installation","to":"\u002Finstallation"},{"name":"Directory structure","to":"\u002Fdirectory-structure"},{"name":"Routing","to":"\u002Frouting"},{"name":"Pages","to":"\u002Fpages"},{"name":"Static files","to":"\u002Fstatic-files"},{"name":"Deployment","to":"\u002Fdeployment"}],"Customization":[{"name":"Configuration","to":"\u002Fconfiguration"},{"name":"Custom routes","to":"\u002Fcustom-routes"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Loading component","to":"\u002Floading-component"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Advanced":[{"name":"Async datas","to":"\u002Fasync-datas"},{"name":"Vuex store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]},"apiMenu":{"Nuxt Module":[{"name":"Usage","to":""},{"name":"Render","to":"\u002Fnuxt-render"},{"name":"RenderRoute","to":"\u002Fnuxt-render-route"}],"Configuration":[{"name":"Build","to":"\u002Fconfiguration-build"},{"name":"Cache","to":"\u002Fconfiguration-cache"},{"name":"CSS","to":"\u002Fconfiguration-css"},{"name":"Env","to":"\u002Fconfiguration-env"},{"name":"Generate","to":"\u002Fconfiguration-generate"},{"name":"Head","to":"\u002Fconfiguration-head"},{"name":"Loading","to":"\u002Fconfiguration-loading"},{"name":"Plugins","to":"\u002Fconfiguration-plugins"},{"name":"Router","to":"\u002Fconfiguration-router"}],"pages":[{"name":"Context","to":"\u002Fpages-context"},{"name":"Option: data","to":"\u002Fpages-data"},{"name":"Option: fetch","to":"\u002Fpages-fetch"},{"name":"Option: transition","to":"\u002Fpages-transition"},{"name":"_app.vue","to":"\u002Fpages-layout-app"},{"name":"_error.vue","to":"\u002Fpages-layout-error"},{"name":"_*.vue","to":"\u002Fpages-hidden"}],"store":[{"name":"Action nuxtServerInit","to":"\u002Fstore-nuxtserverinit"}],"Commands":[{"name":"Nuxt","to":"\u002Fcommands-nuxt"},{"name":"Nuxt build","to":"\u002Fcommands-nuxt-build"},{"name":"Nuxt start","to":"\u002Fcommands-nuxt-start"},{"name":"Nuxt generate","to":"\u002Fcommands-nuxt-generate"}]},"examplesMenu":{"Essentials":[{"name":"Hello world","to":""},{"name":"SEO HTML Head","to":"\u002Fseo-html-head"}],"Customization":[{"name":"Cached Components","to":"\u002Fcached-components"},{"name":"Custom Loading","to":"\u002Fcustom-loading"},{"name":"Custom Routes","to":"\u002Fcustom-routes"},{"name":"Global CSS","to":"\u002Fglobal-css"},{"name":"Layouts","to":"\u002Flayouts"},{"name":"Plugins","to":"\u002Fplugins"},{"name":"Routes transitions","to":"\u002Froutes-transitions"}],"Advanced":[{"name":"Async Datas","to":"\u002Fasync-datas"},{"name":"Auth Routes","to":"\u002Fauth-routes"},{"name":"Vuex Store","to":"\u002Fvuex-store"},{"name":"Testing","to":"\u002Ftesting"}]}},"serverRendered":true}</script>
+    <script src="/_nuxt/vendor.bundle.js" defer></script>
+    <script src="/_nuxt/nuxt.bundle.js" defer></script>
+  </body>
+</html>
